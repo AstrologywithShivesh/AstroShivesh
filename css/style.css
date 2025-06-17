@@ -1,0 +1,163 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fdfaf6;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  color: #5c3d2e;
+}
+
+/* Navigation */
+header {
+  background-color: #fff3e6;
+  padding: 1rem 2rem;
+  border-bottom: 2px solid #f1d6ab;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #8b3a3a;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav-links a.book-now, .nav-links a.active {
+  background-color: #ffb347;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  color: #fff;
+}
+
+/* Sections */
+section {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.hero {
+  background-color: #ffecc7;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.cta-button, .link-button, button {
+  display: inline-block;
+  background-color: #d2691e;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.cta-button:hover, .link-button:hover, button:hover {
+  background-color: #a0522d;
+}
+
+/* Services and Products Grid */
+.services-grid, .products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.service, .product {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Testimonials */
+.testimonials blockquote {
+  background: #fff8ee;
+  border-left: 5px solid #f4b400;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+/* Footer */
+footer {
+  background-color: #f1d6ab;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+
+footer .social-links a {
+  margin: 0 10px;
+  color: #8b3a3a;
+  text-decoration: none;
+}
+
+/* Form Styling */
+.booking-form, .contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+input, select, textarea {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+/* Success Message */
+.success-section {
+  text-align: center;
+  padding: 4rem 1rem;
+  background-color: #e9ffe6;
+}
+
+/* WhatsApp Float */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  padding: 0.8rem 1rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* Hindi Font */
+.hindi-text {
+  font-family: 'Noto Sans Devanagari', sans-serif;
+  font-size: 1.2rem;
+  color: #5c3d2e;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari&display=swap');
