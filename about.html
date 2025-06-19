@@ -7,34 +7,103 @@
   <meta name="description" content="About Astrologer Shivesh Pati Tripathi">
   <title>About Shivesh Ji</title>
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Noto Sans Devanagari', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f3ea;
+    }
+
+    section {
+      padding: 60px 20px;
+      color: #222;
+      animation: fadeInUp 1s ease both;
+      border-radius: 20px;
+      margin: 20px auto;
+      max-width: 1200px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .about-main h1,
+    .about-main h2 {
+      text-align: center;
+      color: #722f37;
+    }
+
+    .section-box {
+      margin-bottom: 40px;
+      background: linear-gradient(to right, #ffe7ba, #fff1d6);
+      padding: 30px;
+      border-radius: 15px;
+    }
+
+    .section-box:nth-child(even) {
+      background: linear-gradient(to right, #e6f0ff, #f2f6ff);
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li::before {
+      content: '🔸';
+      margin-right: 8px;
+      color: #ba5b3f;
+    }
+
+    blockquote {
+      font-style: italic;
+      margin: 20px 0;
+      padding: 10px 20px;
+      background: #fffaf0;
+      border-left: 4px solid #e0a96d;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .about-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      padding-top: 30px;
+    }
+
+    .about-gallery img {
+      width: 180px;
+      height: auto;
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+    }
+
+    .about-gallery img:hover {
+      transform: scale(1.05);
+    }
+  </style>
 </head>
 
 <body>
-  <!-- Header / Navigation -->
-  <header>
-    <nav>
-      <div class="logo">🔯 Shivesh Ji</div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html" class="active">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="booking.html" class="book-now">Book Now</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- About Section -->
   <section class="about-main">
     <h1>आचार्य शिवेश त्रिपाठी के बारे में</h1>
-    <div class="about-text">
-      <p>🔱 <strong>हर हर महादेव!</strong><br>
-        <strong>श्री काशी विश्वनाथो विजयते!!</strong></p>
 
+    <div class="section-box">
+      <p><strong>हर हर महादेव! श्री काशी विश्वनाथो विजयते!!</strong></p>
       <p><strong>मैं हूँ आचार्य शिवेश त्रिपाठी</strong>, काशी हिन्दू विश्वविद्यालय से परंपरागत संस्कृत एवं ज्योतिष में शास्त्रीय उच्च शिक्षा प्राप्त। मेरा मार्गदर्शन भारत के प्रमुख विद्वानों, प्रोफेसरों एवं अनुसंधानकर्ताओं द्वारा हुआ है जिन्होंने ज्योतिष को केवल विद्या नहीं, बल्कि चेतना का विज्ञान माना।</p>
+    </div>
 
+    <div class="section-box">
       <h2>🔹 विशेषज्ञता</h2>
       <ul>
         <li>विवाह, प्रेम, संतान और पारिवारिक समस्याओं में समाधान</li>
@@ -43,23 +112,30 @@
         <li>मणि, मंत्र, औषधि व तांत्रिक उपाय</li>
         <li>मानसिक तनाव, आत्मिक शांति और आध्यात्मिक परामर्श</li>
       </ul>
+    </div>
 
+    <div class="section-box">
       <h2>🔹 दृष्टिकोण</h2>
       <p>पारंपरिक शास्त्रों की गहराई को आधुनिक मनोवैज्ञानिक समझ के साथ जोड़कर मैं जीवन की उलझनों में सरल, सार्थक और सटीक समाधान प्रदान करता हूँ। 5+ वर्षों का अनुभव और अनेकों संतुष्ट जीवनों के साथ मैं <strong>AstroSage पर Verified & Trusted ज्योतिषाचार्य</strong> भी हूँ।</p>
+    </div>
 
+    <div class="section-box">
       <h2>🕉 मेरा विश्वास</h2>
       <blockquote>
         "ज्योतिष डराने के लिए नहीं, जागृत करने के लिए होता है।"<br>
         "यह आत्मा का दर्पण है, जिसमें आप अपने भीतर की दिशा देख सकते हैं।"
       </blockquote>
+    </div>
 
+    <div class="section-box">
       <h2>🚫 नक़लियों से सावधान!</h2>
       <p>आजकल कई फ़र्ज़ी नामों और नकली उपाधियों के साथ लोग भोलेभाले श्रद्धालुओं को भ्रमित कर रहे हैं। <strong>सत्य ज्योतिष वही है जो शास्त्रों और साधना दोनों से निकला हो।</strong></p>
+    </div>
 
+    <div class="section-box">
       <p><strong>🌠 अगर आप भी जीवन की उलझनों में हैं — तो आइए, जुड़िए और समाधान पाइए।</strong></p>
     </div>
 
-    <!-- Image Gallery -->
     <div class="about-gallery">
       <img src="images/shivesh1.jpg" alt="Shivesh Ji 1">
       <img src="images/shivesh2.jpg" alt="Shivesh Ji 2">
@@ -68,23 +144,6 @@
       <img src="images/shivesh5.jpg" alt="Shivesh Ji 5">
     </div>
   </section>
-
-  <!-- Call to Action -->
-  <section class="cta">
-    <h2>शिवेश जी से आज ही संपर्क करें</h2>
-    <p>अपनी ज्योतिषीय यात्रा की शुरुआत करें और जीवन के रहस्यों को समझें।</p>
-    <a href="booking.html" class="cta-button">सेशन बुक करें</a>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Shivesh Pati Tripathi | All Rights Reserved</p>
-    <div class="social-links">
-      <a href="#">Instagram</a>
-      <a href="#">Facebook</a>
-      <a href="#">YouTube</a>
-    </div>
-  </footer>
 </body>
 
 </html>
