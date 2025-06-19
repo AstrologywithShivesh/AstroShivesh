@@ -4,9 +4,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Contact astrologer Shivesh Pati Tripathi for consultations, product inquiries, or collaboration" />
+  <meta name="description"
+    content="Contact astrologer Shivesh Pati Tripathi for consultations, product inquiries, or collaboration" />
   <title>Contact - Shivesh Ji</title>
   <link rel="stylesheet" href="css/style.css" />
+  <script>
+    function sendMessage(event) {
+      event.preventDefault(); // Prevent form from submitting normally
+
+      const name = document.getElementById('name').value;
+      const phone = document.getElementById('phone').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+
+      const finalMessage = `Namaste, my name is ${name}.
+Email: ${email}
+Phone: ${phone}
+Message: ${message}`;
+
+      alert(`🙏 Thank you, ${name}! Your message is being sent to Shivesh Ji.`);
+
+      // Redirect to WhatsApp with pre-filled message
+      const whatsappURL = `https://wa.me/917379023737?text=${encodeURIComponent(finalMessage)}`;
+      window.location.href = whatsappURL;
+    }
+  </script>
 </head>
 
 <body>
@@ -32,7 +54,7 @@
     <p>Have a question, need a consultation, or want product recommendations? Reach out to us below.</p>
 
     <div class="contact-container">
-      <form action="#" method="POST" class="contact-form">
+      <form onsubmit="sendMessage(event)" class="contact-form">
         <label for="name">Your Name</label>
         <input type="text" id="name" name="name" required />
 
@@ -56,7 +78,7 @@
         <p><a href="tel:+917379023737">+91 73790 23737</a></p>
 
         <h3>Email:</h3>
-        <p><a href="mailto:shiveshjikendra@gmail.com">shiveshjikendra@gmail.com</a></p>
+        <p><a href="mailto:astrowithsptripathi737@gmail.com">astrowithsptripathi737@gmail.com</a></p>
 
         <h3>WhatsApp:</h3>
         <p><a href="https://wa.me/917379023737">Chat Now</a></p>
